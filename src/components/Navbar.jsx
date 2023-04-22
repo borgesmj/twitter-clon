@@ -8,7 +8,7 @@ import Profileicon from './navbar/Profileicon'
 
 const Navbar = () => {
   return (
-    <div className='bg-transparent w-full flex flex-row items-center justify-around border-t-2 border-r-0 fixed bottom-0.5 m-0 h-20 xl:w-3/12 xl:top-10 xl:h-full xl:my-10 xl:border-t-0 xl:border-r-2 xl:flex-col xl:items-start xl:justify-start xl:mb-10'>
+    <div className='bg-transparent w-1/5 h-4/5 flex flex-row items-center justify-around border-t-2 border-r-0 fixed bottom-0.5 m-0 xl:w-1/5 xl:top-10 xl:h-full xl:my-10 xl:border-t-0 xl:border-r-2 xl:flex-col xl:items-start xl:justify-start xl:mb-10'>
         <Homeicon/>
         <Searchicon/>
         <NOtificationicon/>
