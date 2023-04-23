@@ -2,7 +2,7 @@ import React from 'react'
 
 const Tweetform = () => {
   return (
-      <div className='w-full'>
+      <div className='w-full  my-4'>
         <form action="" className=''>
         <div className='flex flex-col'>
             <div className='flex flex-row'>
