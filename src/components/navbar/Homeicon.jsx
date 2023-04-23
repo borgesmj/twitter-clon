@@ -14,16 +14,16 @@ const Homeicon = () => {
     ];
 
     return (
-        <div className='flex flex-row w-full bg-black justify-around xl:w-1/5 xl:flex-col'>
+        <div className='flex flex-row content-end xl:flex-col'>
             {list.map((item, index) => (
-                <div key={index} className="home-icon text-2xl text-white mb-10">
-                    <a href="#" className='hover:bg-slate-50 w-60 hover:text-black rounded-2xl flex flex-row xl:px-5 xl:items-center'>
+                <div key={index} className="text-2xl text-white mb-10">
+                    <a href="#" className='hover:bg-slate-50 hover:text-black rounded-2xl flex flex-row xl:px-5 xl:items-center'>
                         {item.icono}
                         <h3 className='hidden xl:inline xl:px-3'>{item.nombre}</h3>
                     </a>
                 </div>
             ))}
-        </div>
+         </div>
     );
 };
 

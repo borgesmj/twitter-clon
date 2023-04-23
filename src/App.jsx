@@ -7,7 +7,8 @@ import Tweetform from './components/Tweetform'
 import Tweetlist from './components/Tweetlist'
 
 function App() {
-
+  const [tweets, setTweets] = useState([]);
+  const [counter, setCounter] =useState(280)
   return (
     <> 
         <div className='flex flex-col'>
@@ -26,7 +27,10 @@ function App() {
                                 <Tweetbutton/>
                     </div>
                     <div className='xl:w-3/5 xl:ml-5 xl:border-t-0 xl:border-r-2'>
-                      <Tweetform/>
+                      <Tweetform
+                      counter={counter}
+                      setCounter={setCounter}
+                      />
                       <Tweetlist/>
 
                     </div>

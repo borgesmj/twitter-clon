@@ -7,7 +7,7 @@ import Tweetbutton from './Tweetbutton'
 
 const Navbar = () => {
   return (
-    <div className='bg-transparent w-full h-20 flex flex-row items-center justify-around fixed bottom-0.5 m-0 xl:w-1/5 xl:top-10 xl:h-full xl:my-10  xl:flex-col xl:items-start xl:justify-start xl:mb-10'>
+    <div className='w-full h-20 flex justify-between fixed bottom-0.5 m-0 xl:w-1/5 xl:top-10 xl:h-full xl:my-10  xl:flex-col xl:items-start xl:justify-start xl:mb-10'>
         <Homeicon/>
         <div className='hidden xl:inline'>
           <Profileicon/>

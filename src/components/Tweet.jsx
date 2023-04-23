@@ -7,11 +7,11 @@ import { FaShareAlt} from "react-icons/fa";
 const Tweet = () => {
   return (
     <div className='border-t-2 flex flex-col py-3 mr-2 rounded-sm'>
-        <div className=' flex flex-row'>
+        <div className=' flex flex-row items-center'>
             <div>
                 <img src="./public/twitter.svg" className='bg-white rounded-full h-20' alt="" />
             </div>
-            <div className='my-2'>
+            <div className='my-2 flex flex-col items-center justify-center'>
                 <a href="#" className=' ml-4 font-bold text-indigo-500 text-2xl'><p>MIguel José</p></a>
                 <p className='font-bold text-white'><a href="">@Migu3l_oN</a></p>
             </div>
