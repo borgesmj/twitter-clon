@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 // import './App.css'
 import Navbar from './components/Navbar'
 import Twittericon from './components/Twittericon'
@@ -8,7 +8,8 @@ import Tweetlist from './components/Tweetlist'
 
 function App() {
   const [tweets, setTweets] = useState([]);
-  const [counter, setCounter] =useState(280)
+  
+
   return (
     <> 
         <div className='flex flex-col'>
@@ -28,10 +29,12 @@ function App() {
                     </div>
                     <div className='xl:w-3/5 xl:ml-5 xl:border-t-0 xl:border-r-2'>
                       <Tweetform
-                      counter={counter}
-                      setCounter={setCounter}
+                      tweets={tweets}
+                      setTweets={setTweets}
                       />
-                      <Tweetlist/>
+                      <Tweetlist
+                      tweets={tweets}
+                      />
 
                     </div>
                     <div className='hidden xl:inline xl:w-1/5 text-white xl:ml-10'>tendencias</div>
