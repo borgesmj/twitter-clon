@@ -21,9 +21,6 @@ const Tweet = ({tweet}) => {
         "Dic"
     ]
 
-    console.log(meses[tweet.fecha.month])
-
-
   return (
     <div className='border-t-2 flex flex-col py-3 mr-2 rounded-sm'>
         <div className=' flex flex-row items-center'>

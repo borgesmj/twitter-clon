@@ -35,11 +35,10 @@ const Tweetform = ({tweets, setTweets}) => {
       return numero + fecha
   }
 
-    const objetoTweets = []
+    const objetoTweets = {}
 
     objetoTweets.text = text
     objetoTweets.fecha = date()
-
     objetoTweets.id = generarID() 
     
 
@@ -57,7 +56,10 @@ const Tweetform = ({tweets, setTweets}) => {
 
   return (
     <div className='w-full my-4'>
-      <form action='' className=''>
+      <form 
+          action='' 
+          className='bg-gray-900 rounded-xl mx-5'
+          onSubmit={handleSubmit}>
         <div className='flex flex-col'>
           <div className='flex flex-row'>
             <img src='./public/twitter.svg' className='bg-white rounded-full h-20 p-1 m-1' />
@@ -66,7 +68,7 @@ const Tweetform = ({tweets, setTweets}) => {
               id='tweet'
               cols='80'
               rows='5'
-              className='text-white bg-gray-800 resize-none'
+              className='text-white bg-gray-900 resize-none'
               placeholder='¿Qué está pasando?'
               value={text}
               onInput={handleInput}

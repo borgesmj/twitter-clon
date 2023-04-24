@@ -13,11 +13,18 @@ const Homeicon = () => {
       {icono: <FaEnvelope/>, nombre: "Mensajes"},
     ];
 
+    const links = [
+        0,
+        0,
+        0,
+        "./mensajes.html"
+    ]
+
     return (
-        <div className='flex flex-row content-end xl:flex-col'>
+        <div className='bg-black flex flex-row w-full justify-around xl:flex-col xl:w-60'>
             {list.map((item, index) => (
                 <div key={index} className="text-2xl text-white mb-10">
-                    <a href="#" className='hover:bg-slate-50 hover:text-black rounded-2xl flex flex-row xl:px-5 xl:items-center'>
+                    <a href={links[index]} className='hover:bg-slate-50 hover:text-black rounded-2xl xl:flex xl:flex-row xl:px-5'>
                         {item.icono}
                         <h3 className='hidden xl:inline xl:px-3'>{item.nombre}</h3>
                     </a>
