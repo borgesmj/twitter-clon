@@ -62,7 +62,7 @@ const Tweetform = ({tweets, setTweets}) => {
           onSubmit={handleSubmit}>
         <div className='flex flex-col'>
           <div className='flex flex-row'>
-            <img src='https://github.com/borgesmj/twitter-clon/blob/main/public/twitter.svg' className='bg-white rounded-full h-20 p-1 m-1' />
+            <img src="https://img.icons8.com/cotton/256/null/twitter.png" className='bg-white rounded-full h-20 p-1 m-1' />
             <textarea
               name=''
               id='tweet'
